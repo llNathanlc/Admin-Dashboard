@@ -196,11 +196,21 @@ img{
     box-shadow:  2px 3px 2px rgb(199, 197, 197);
     padding:1rem;
 }
+.announcement-card{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+}
+.announcement-title{
+    font-weight: bolder;
+    font-size: small;
+}
 .announcements,.trending{
     display: grid;
     grid-template-rows: repeat(auto-fit,1fr);
     gap:1rem;
 }
+
 .card{
     display:flex;
     flex-direction: column;
@@ -209,6 +219,7 @@ img{
 }
 .user-name{
     font-size: 0.8rem;
+    font-weight: bolder;
 }
 .user-title{
     font-size: 0.7rem;
@@ -228,5 +239,7 @@ img{
     gap:0.4rem;
 }
 .rightside{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
