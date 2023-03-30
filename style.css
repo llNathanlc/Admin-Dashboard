@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
     text-decoration: none;
+    font-style: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -44,6 +45,9 @@ table {
 }
 
 /*Project starts here*/
+a{
+    color:white;
+}
 :root{
     font-family:'Times New Roman', Times, serif;
 }
@@ -111,19 +115,22 @@ button:hover{
 }
 .second-icons{
     grid-area: 3 / 1 / 4 / 2;
+    justify-self: right;
 }
 .second-names{
     grid-area: 3 / 2 / 4 / 3;
+    align-items: flex-start;
 }
 .third-icons{
     grid-area: 5 / 1 / 6 / 2;
+    justify-self: right;
 }
 .third-names{
     grid-area: 5 / 2 / 6 / 3;
+    align-items: flex-start;
 }
 img{
     height:1.2rem;
-    color:white;
 }
 .dash{
     font-size: 1.3rem;
@@ -134,15 +141,37 @@ img{
 }
 .header{
     grid-area: 1 / 2 / 2 / 3;
-    padding:1;
+    padding:1rem;
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: 3rem;
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     box-shadow: 2px 3px 2px rgb(210, 210, 210);
     position: relative;
+    gap:1.5rem;
 }
-
+.header div{
+    display: flex;
+    align-items: center;
+}
+.header > :nth-child(2){
+    justify-self:flex-end;
+    gap:2.5rem;
+}
+.header > :nth-child(3){
+    display: flex;
+    gap:1rem;
+}
+.header > :nth-child(3) > :nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:0.2rem;
+}
+.header > :nth-child(4){
+    justify-content: space-evenly;
+    align-items: center;
+}
 .center{
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
